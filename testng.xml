@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="UserRegistrationTest">
+    <parameter name="browserType" value="CHROME" />
+    <parameter name="url" value="http://localhost/ecommerce/"/>
+	<!--<groups>
+      <run>
+        <exclude name="excludeUserRegistrationTest"/>
+      </run>
+    </groups> -->
+    <classes>
+      <class name="customerTest.UserRegistrationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="UserAuthenticationTest">
+    <parameter name="browserType" value="CHROME" />
+    <parameter name="url" value="http://localhost/ecommerce/"/>
+    <classes>
+      <class name="customerTest.UserAuthenticationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="ProductSearchTest">
+    <parameter name="browserType" value="CHROME" />
+    <parameter name="url" value="http://localhost/ecommerce/"/>
+    <classes>
+      <class name="customerTest.ProductSearchTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="AddToCartTest">
+    <parameter name="browserType" value="CHROME" />
+    <parameter name="url" value="http://localhost/ecommerce/"/>
+    <classes>
+      <class name="customerTest.AddToCartTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="CheckoutProcessTest">
+    <parameter name="browserType" value="CHROME" />
+    <parameter name="url" value="http://localhost/ecommerce/"/>
+    <classes>
+      <class name="customerTest.CheckoutProcessTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <!--  Test cases for the Admin-->
+  <test thread-count="5" name="AdminAuthenticationTest">
+    <parameter name="browserType" value="CHROME" />
+    <parameter name="url" value="http://localhost/ecommerce/admin/login.php"/>
+    <classes>
+      <class name="adminTest.AdminAuthenticationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="ProductManagementTest">
+    <parameter name="browserType" value="CHROME" />
+    <parameter name="url" value="http://localhost/ecommerce/admin/login.php"/>
+    <classes>
+      <class name="adminTest.ProductManagementTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="OrdersManagementTest">
+    <parameter name="browserType" value="CHROME" />
+    <parameter name="url" value="http://localhost/ecommerce/admin/login.php"/>
+    <classes>
+      <class name="adminTest.OrdersManagementTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="CategoryManagementTest">
+    <parameter name="browserType" value="CHROME" />
+    <parameter name="url" value="http://localhost/ecommerce/admin/login.php"/>
+    <classes>
+      <class name="adminTest.CategoryManagementTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="ProductSettingsTest">
+    <parameter name="browserType" value="CHROME" />
+    <parameter name="url" value="http://localhost/ecommerce/admin/login.php"/>
+    <classes>
+      <class name="adminTest.ProductSettingsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="UserManagementTest">
+    <parameter name="browserType" value="CHROME" />
+    <parameter name="url" value="http://localhost/ecommerce/admin/login.php"/>
+    <classes>
+      <class name="adminTest.UserManagementTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
